@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <script src="scripts.js" defer></script>
+
+<div class="empty">
+    <div class="empty-state">
+        <img src="imajes/emptyTasks.png" alt="">
+        <p>Add a task to get started</p>
+    </div>
+</div>
+
+<div class="tasks">
+    <div class="todo-item">
+        <label class="checkbox-container">
+            <input type="checkbox" class="done_checked" onChange="checkedTask()">
+            <span class="checkmark"></span>
+        </label>
+        <p class="task-text">Create new do</p>
+        <button type="button" class="button_delete">
+            <img src="/imajes/crest2.svg" alt="">
+        </button>
+    </div>
+</div>
+
+<div class="new">
+    <div class="nav">
+        <button type="button" class="back-btn">
+            <img src="/imajes/leftstrelka.svg" alt="">
+        </button>
+        <button type="button" class="accept-btn" onChange="addNewTask()"> 
+            <img src="/imajes/gal.svg" alt="">
+        </button>
+    </div>
+    <textarea name="task_rext" id="" placeholder="Add new task..." class="textarea"></textarea>
+</div>
+
+
+<button type="button" class="button-add" onclick="clickAddBtn()">
+    <img src="imajes/crest.svg" alt="">
+</button>
+
+</body>
+</html>
