@@ -144,3 +144,37 @@ button{
         border: none;
         outline: none;
     }
+
+    .update_window {
+        padding: 30px;
+        position: fixed;
+        z-index: 999;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 300px);
+        background-color: #d2d2d2;
+        transition: all 0.3s ease-in-out; /* Добавляем анимацию */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .2); /* Затемняем страницу */
+        transform: translate(-50%, -50%) scale(1); 
+        
+      }
+      
+      .textarea_update {
+        position: relative;
+        width: 100%;
+        border: none;
+        background-color: #d2d2d2;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 29px;
+        font-size: 18pt;
+        max-width: 600px; /* Фиксируем ширину */
+      }
+
+      textarea{
+        resize: none;
+        
+      }
+
+      
